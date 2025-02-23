@@ -1,7 +1,6 @@
 import React from "react";
 import { useNavigate } from "react-router-dom";
 import "../components/Home.css";
-import logo from "../assets/perro_logo.png";
 import illustration from "../assets/Logo.png";
 
 const Home = () => {
@@ -9,25 +8,6 @@ const Home = () => {
 
     return (
         <div className="home-container">
-            {/* Navbar */}
-            <header className="navbar">
-                <div className="logo">
-                    <img src={logo} alt="Goddard Logo" />
-                    <div>
-                        <h1>GODDARD</h1>
-                        <p>INFORMATION & NEWS VERIFICATION</p>
-                    </div>
-                </div>
-                <nav>
-                    <ul>
-                        <li><a href="/">Inicio</a></li>
-                        <li><a href="/news">Últimas noticias</a></li>
-                        <li><a href="#">Calidad de fuentes</a></li>
-                        <li><a href="#">Noticias verificadas</a></li>
-                    </ul>
-                </nav>
-            </header>
-
             {/* Contenido Principal */}
             <section className="main">
                 <div className="text-content">
@@ -38,10 +18,10 @@ const Home = () => {
                         en tiempo real, desde los principales medios de información del país.
                     </p>
                     <div className="buttons">
+                        {/* Solo se deja el botón de Verificar */}
                         <button className="btn-primary" onClick={() => navigate("/verify")}>
                             Verificar
                         </button>
-                        <button className="btn-secondary">Leer más</button>
                     </div>
                 </div>
                 <div className="image-content">
@@ -55,7 +35,11 @@ const Home = () => {
                 <div className="news-container">
                     {/* Contenedor Izquierdo: Noticia */}
                     <div className="news-content">
-                        <img src="https://diariocorreo.com.ec/public/img/uploads/2023-09-05--22-57-37/infojpg" alt="Noticia" className="news-image" />
+                        <img 
+                            src="https://diariocorreo.com.ec/public/img/uploads/2023-09-05--22-57-37/infojpg" 
+                            alt="Noticia" 
+                            className="news-image" 
+                        />
                         <p>
                             Las elecciones presidenciales en Ecuador se acercan y el candidato X ha tomado la delantera en las encuestas nacionales.
                             Analistas políticos debaten sobre el impacto de su propuesta económica en el futuro del país.
@@ -71,7 +55,6 @@ const Home = () => {
                                 <div className="thermometer-fill false-news" style={{ height: "70%" }}>
                                     <span className="thermometer-percentage">70%</span>
                                 </div>
-                                
                             </div>
 
                             {/* Termómetro Noticia Verdadera */}
@@ -79,7 +62,6 @@ const Home = () => {
                                 <div className="thermometer-fill true-news" style={{ height: "30%" }}>
                                     <span className="thermometer-percentage">30%</span>
                                 </div>
-
                             </div>
                         </div>
 

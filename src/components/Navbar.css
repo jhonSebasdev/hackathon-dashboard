@@ -1,46 +1,27 @@
-/* Navbar */
-.navbar {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 15px 30px;
-    background-color: white;
-    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
-  }
-  
-  .logo {
-    display: flex;
-    align-items: center;
-  }
-  
-  .logo img {
-    width: 50px; /* Ajustamos el tamaño del logo */
-    margin-right: 10px;
-  }
-  
-  .logo h1 {
-    font-size: 24px;
-    margin: 0;
-  }
-  
-  .logo p {
-    font-size: 12px;
-    color: #666;
-    margin: 0;
-  }
-  
-  /* Navegación */
-  nav ul {
-    list-style: none;
-    display: flex;
-    gap: 20px;
-    padding: 0;
-    margin: 0;
-  }
-  
-  nav ul li a {
-    text-decoration: none;
-    color: #333;
-    font-weight: bold;
-  }
-  
+nav {
+  flex-grow: 1;
+  text-align: center; /* Centra los elementos del menú */
+  margin-left: 30px; /* Ajusta la distancia desde la izquierda */
+  max-width: 100%; /* Evita que el nav exceda el ancho de la pantalla */
+  overflow: hidden; /* Previene desbordamiento */
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+  justify-content: center; /* Centra los elementos en el menú */
+  gap: 20px; /* Ajusta el espacio entre elementos */
+  padding: 0; /* Evita desplazamiento innecesario */
+  margin: 5px auto; /* Asegura que el nav esté centrado */
+  flex-wrap: wrap; /* Permite que los elementos bajen si no caben */
+}
+
+nav ul li {
+  white-space: nowrap; /* Evita que los elementos se dividan en varias líneas */
+}
+
+nav ul li a {
+  text-decoration: none; /* Quita el subrayado de los enlaces */
+  color: black; /* Color del texto */
+  padding: 10px 15px; /* Espaciado interno */
+}

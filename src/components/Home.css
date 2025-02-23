@@ -224,3 +224,19 @@ nav ul li a {
 .legend-true {
   background: blue;
 }
+.btn-primary {
+  background-color: #4dbeff; /* Color celeste del logo */
+  color: white;
+  padding: 12px 20px;
+  font-size: 16px;
+  border: none;
+  cursor: pointer;
+  transition: background 0.3s ease;
+  text-decoration: none;
+  display: inline-block;
+  border-radius: 5px;
+}
+
+.btn-primary:hover {
+  background-color: #3357CC; /* Un tono más oscuro para el hover */
+}

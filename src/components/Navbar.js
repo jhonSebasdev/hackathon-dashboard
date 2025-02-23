@@ -1,7 +1,7 @@
 import React from "react";
-import { Link } from "react-router-dom"; // Link en lugar de <a> para evitar recargar la página
-import "../components/Navbar.css";
+import { Link } from "react-router-dom";
 import logo from "../assets/perro_logo.png";
+import "../components/Navbar.css";
 
 const Navbar = () => {
   return (
@@ -16,9 +16,9 @@ const Navbar = () => {
       <nav>
         <ul>
           <li><Link to="/">Inicio</Link></li>
-          <li><Link to="/news">Últimas noticias</Link></li> {/* ✅ Enlace corregido */}
-          <li><Link to="#">Calidad de fuentes</Link></li>
-          <li><Link to="#">Noticias verificadas</Link></li>
+          <li><Link to="/news">Últimas noticias</Link></li>
+          <li><Link to="/sources">Calidad de fuentes</Link></li>
+          <li><Link to="/verified">Noticias verificadas</Link></li>
         </ul>
       </nav>
     </header>
