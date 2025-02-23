@@ -1,0 +1,226 @@
+/* Reset */
+body {
+  font-family: "Arial", sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #f5f5f5;
+}
+
+/* Contenedor principal */
+.home-container {
+  width: 90%;
+  max-width: 1400px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+/* Navbar */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px 40px;
+  background-color: white;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+  width: 100%;
+}
+
+/* Logo */
+.logo {
+  display: flex;
+  align-items: center;
+}
+
+.logo img {
+  width: 60px;
+  margin-right: 10px;
+}
+
+.logo h1 {
+  font-size: 24px;
+  margin: 0;
+}
+
+.logo p {
+  font-size: 12px;
+  color: #666;
+  margin: 0;
+}
+
+/* Navegación */
+nav ul {
+  list-style: none;
+  display: flex;
+  gap: 20px;
+  padding: 0;
+  margin: 0;
+}
+
+nav ul li a {
+  text-decoration: none;
+  color: #333;
+  font-weight: bold;
+}
+
+/* Sección principal */
+.main {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 50px 30px;
+}
+
+.text-content {
+  max-width: 50%;
+}
+
+.text-content h2 {
+  font-size: 36px;
+  color: #000;
+}
+
+.subtitle {
+  font-size: 20px;
+  font-weight: bold;
+  color: #007bff;
+}
+
+/* Imagen */
+.image-content img {
+  width: 100%;
+  max-width: 450px;
+}
+
+/* Sección Noticia Viral */
+.viral-news {
+  text-align: center;
+  margin-top: 40px;
+  padding: 20px;
+}
+
+/* Contenedor noticia viral */
+.news-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 30px;
+  max-width: 900px;
+  margin: 0 auto;
+  background: rgba(240, 240, 255, 0.9);
+  padding: 20px;
+  border-radius: 20px;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+  border: 2px solid #D9D9D9;
+}
+
+/* Contenedor de la imagen + texto */
+.news-content {
+  flex: 1;
+  text-align: center;
+}
+
+.news-image {
+  width: 100%;
+  max-width: 350px;
+  border-radius: 10px;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Contenedor de los termómetros */
+.thermometer-container {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background: white;
+  padding: 20px;
+  border-radius: 15px;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+/* 🔥 TERMÓMETROS MEJORADOS 🔥 */
+.thermometers {
+  display: flex;
+  gap: 50px;
+  justify-content: center;
+  align-items: flex-end;
+  height: 300px;
+}
+
+/* Estilo del termómetro */
+.thermometer {
+  width: 60px;
+  height: 100%;
+  background: linear-gradient(to bottom, #ddd, #eee);
+  border-radius: 50px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-end;
+  overflow: hidden;
+  position: relative;
+  border: 5px solid #aaa;
+  box-shadow: inset 0 0 10px rgba(0, 0, 0, 0.2);
+}
+
+/* Relleno del termómetro */
+.thermometer-fill {
+  width: 100%;
+  height: 0%;
+  transition: height 1s ease-in-out;
+}
+
+/* Noticia falsa (rojo) */
+.false-news {
+  background: linear-gradient(to top, #ff0000, #ff6666);
+  border-radius: 50px;
+}
+
+/* Noticia verdadera (azul) */
+.true-news {
+  background: linear-gradient(to top, #0066ff, #66a3ff);
+  border-radius: 50px;
+}
+
+/* Texto de los termómetros (porcentaje) */
+.thermometer-percentage {
+  font-size: 17px;
+  font-weight: bold;
+  color: black; /* Color negro */
+}
+
+/* 🔹 Animación de los termómetros */
+@keyframes fillAnimation {
+  from {
+    height: 0%;
+  }
+}
+
+.false-news, .true-news {
+  animation: fillAnimation 1s ease-in-out;
+}
+
+/* Leyenda de los colores */
+.thermometer-legend {
+  margin-top: 15px;
+  text-align: center;
+  font-size: 16px;
+  font-weight: bold;
+}
+
+.thermometer-legend span {
+  display: inline-block;
+  width: 20px;
+  height: 20px;
+  margin-right: 8px;
+  border-radius: 5px;
+}
+
+.legend-false {
+  background: red;
+}
+
+.legend-true {
+  background: blue;
+}

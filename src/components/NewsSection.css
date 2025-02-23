@@ -1,0 +1,36 @@
+/* Estilos generales de la sección de noticias */
+.news-section {
+    padding: 40px 20px;
+    text-align: center;
+    background-color: #f9f9f9; /* Color de fondo suave */
+  }
+  
+  /* Estilo del título */
+  .news-section h2 {
+    font-size: 28px;
+    color: #333;
+    margin-bottom: 20px;
+  }
+  
+  /* Contenedor en cuadrícula para las noticias */
+  .news-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); /* 3 columnas */
+    gap: 20px;
+    justify-content: center;
+    padding: 0 10%;
+  }
+  
+  /* Diseño responsivo */
+  @media (max-width: 768px) {
+    .news-grid {
+      grid-template-columns: repeat(2, 1fr); /* 2 columnas en tabletas */
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .news-grid {
+      grid-template-columns: 1fr; /* 1 columna en móviles */
+    }
+  }
+  
